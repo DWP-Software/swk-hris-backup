@@ -1,0 +1,117 @@
+/* custom style */
+.th-xs {
+    width: 10px !important;
+}
+
+.action-column {
+    width: 1px;
+    white-space: nowrap;
+}
+.serial-column {
+    width: 1px;
+    white-space: nowrap;
+}
+
+.table-form td {
+    vertical-align: top;
+}
+.table-form td:not(:last-child) {
+    padding-right: 15px;
+}
+
+.transparent {
+    background: transparent !important;
+}
+.kv-grid-table {
+    margin-bottom: 0px;
+}
+.kv-grid-container,
+.detail-view-container {
+    background: #fff;
+    /* box-shadow: 0 0 1px rgba(0,0,0,0.3) !important; */
+    border: 1px solid #ddd !important;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+.panel-no-border {
+    margin-bottom: 0px !important;
+    -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, .05);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, .05);
+}
+.panel-no-border .kv-panel-before, 
+.panel-no-border .panel-footer {
+    border:none !important;
+}
+.panel-no-border .panel-footer {
+    background:none !important;
+    padding: 10px 0px;
+}
+.panel-no-border .kv-grid-container {
+    padding: 0 0px;
+}
+
+.btn-text-success {
+    color: #3c763d !important;
+}
+.btn-text-info {
+    color: #00c0ef !important;
+}
+.btn-text-warning {
+    color: #f39c12 !important;
+}
+.btn-text-danger {
+    color: #dd4b39 !important;
+}
+
+.text-mono {
+    font-family: Consolas !important;
+}
+
+.paper {
+    box-shadow: 0 0 4px rgba(0,0,0,0.4);
+    padding:10px;
+}
+
+.table-report th {
+    text-align: center;
+}
+.table-report td {
+    padding: 0 5px !important;
+}
+
+/*CSS for printing*/
+@media print {
+    body * {
+        visibility:hidden;
+    }
+    a[href]:after {
+        content: none !important;
+    }
+    .printable, .printable * {
+        visibility:visible;
+    }
+    /* aligning the printable area */
+    .printable {
+        position: absolute;
+      width: 90%;
+        top:20px !important;
+        /*font-size:70%;*/
+        -webkit-print-color-adjust: exact;
+    }
+    /*.printable li {
+        font-size:70%;
+    }*/
+    /*.printable table th {
+        background: lightblue;
+        -webkit-print-color-adjust: exact;
+        padding:2px !important;
+    }
+    .printable table td {
+        padding:2px !important;
+    }*/
+}
+
+div.form-control.checkbox-container label {
+    width: 100%;
+}
